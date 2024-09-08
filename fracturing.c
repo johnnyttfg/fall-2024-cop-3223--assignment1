@@ -46,7 +46,7 @@ double calculateDistance() {
     distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
     
     // Output the calculated distance
-    printf("The distance between the two points is %.3f\n\n", distance);
+    printf("The distance between the two points is %.2f\n", distance);
     return distance;
 }
 
@@ -56,7 +56,7 @@ double calculatePerimeter() {
     double perimeter = 2 * PI * distance; 
 
     // Output the perimeter
-    printf("The perimeter of the city encompassed by your request is %.3f\n\n", perimeter);
+    printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
 
     // Return difficulty level 
     return 2.0;
@@ -68,7 +68,7 @@ double calculateArea() {
     double area = PI * pow(distance, 2); 
 
     // Output the area
-    printf("The area of the city encompassed by your request is %.3f\n\n", area);
+    printf("The area of the city encompassed by your request is %.2f\n", area);
 
     // Return difficulty level (arbitrarily chosen, can be adjusted)
     return 3.0;
@@ -80,7 +80,7 @@ double calculateWidth() {
     double width = distance; 
 
     // Output the width
-    printf("The width of the city encompassed by your request is %.3f\n\n", width);
+    printf("The width of the city encompassed by your request is %.2f\n", width);
 
     // Return difficulty level 
     return 1.5;
@@ -92,7 +92,7 @@ double calculateHeight() {
     double height = distance;
 
     // Output the height
-    printf("The height of the city encompassed by your request is %.3f\n\n", height);
+    printf("The height of the city encompassed by your request is %.2f\n", height);
 
     // Return difficulty level (arbitrarily chosen, can be adjusted)
     return 2.5;
