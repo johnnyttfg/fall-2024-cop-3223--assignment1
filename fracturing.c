@@ -81,7 +81,7 @@ double calculateWidth() {
     printf("The width of the city encompassed by your request is %.2f\n", width);
 
     //difficulty level
-    return 2.0
+    return 2.0;
 
 }
 
