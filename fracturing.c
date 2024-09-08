@@ -27,11 +27,11 @@ int main(int argc, char **argv) {
 double calculateDistance() {
     double x1, y1, x2, y2, distance;
     
-    // Prompt user to input coordinates
-    printf("Enter coordinates for Point #1 (x1 y1): ");
+    //  input coordinates
+    printf("Enter coordinates for Point #1 (x1, y1): ");
     x1 = askForUserInput();
     y1 = askForUserInput();
-    printf("Enter coordinates for Point #2 (x2 y2): ");
+    printf("Enter coordinates for Point #2 (x2, y2): ");
     x2 = askForUserInput();
     y2 = askForUserInput();
     
@@ -50,19 +50,19 @@ double calculateDistance() {
 // Function to calculate the perimeter using the distance function
 double calculatePerimeter() {
     double distance = calculateDistance();
-    double perimeter = 2 * PI * distance; // Placeholder calculation (assuming circular shape)
+    double perimeter = 2 * PI * distance; 
 
     // Output the perimeter
     printf("The perimeter of the city encompassed by your request is %.3f\n\n", perimeter);
 
-    // Return difficulty level (arbitrarily chosen, can be adjusted)
+    // Return difficulty level 
     return 2.0;
 }
 
 // Function to calculate the area using the distance function
 double calculateArea() {
     double distance = calculateDistance();
-    double area = PI * pow(distance, 2); // Placeholder calculation (assuming circular area)
+    double area = PI * pow(distance, 2); 
 
     // Output the area
     printf("The area of the city encompassed by your request is %.3f\n\n", area);
@@ -74,19 +74,19 @@ double calculateArea() {
 // Function to calculate the width using the distance function
 double calculateWidth() {
     double distance = calculateDistance();
-    double width = distance; // Placeholder (actual width calculation would depend on object specifics)
+    double width = distance; 
 
     // Output the width
     printf("The width of the city encompassed by your request is %.3f\n\n", width);
 
-    // Return difficulty level (arbitrarily chosen, can be adjusted)
+    // Return difficulty level 
     return 1.5;
 }
 
 // Function to calculate the height using the distance function
 double calculateHeight() {
     double distance = calculateDistance();
-    double height = distance; // Placeholder (actual height calculation would depend on object specifics)
+    double height = distance;
 
     // Output the height
     printf("The height of the city encompassed by your request is %.3f\n\n", height);
