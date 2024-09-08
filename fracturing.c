@@ -25,7 +25,7 @@
 
 //Calculate distance between two points
 double calculateDistance() {
-    double x1, y1, x2, y2, distance;
+    double x1, x2, y1, y2, distance;
 
     //ask for user input coordinates
     printf("Enter coordinates for Point #1 (x1 y1): ");
@@ -56,7 +56,7 @@ double calculatePerimeter() {
     printf("The perimeter of the city encompassed by your request %.2f\n", perimeter);
 
     //Difficulty Level
-    return 1.5;
+    return 1.0;
 }
 
 // Calculate the area using distance function
