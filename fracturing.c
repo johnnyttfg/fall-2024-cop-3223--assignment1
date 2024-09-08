@@ -1,3 +1,6 @@
+// Jonathan Thomas 5670488
+
+
 #include <stdio.h>
 #include <math.h>
 
@@ -25,7 +28,7 @@ int main(int argc, char **argv) {
 
 // Function to calculate the distance between two points
 double calculateDistance() {
-    double x1, y1, x2, y2, distance;
+    double x1, x2, y1, y2, distance;
     
     //  input coordinates
     printf("Enter coordinates for Point #1 (x1, y1): ");
