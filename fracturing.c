@@ -100,6 +100,6 @@ double calculateHeight() {
 //Function to ask for user input
 double askForUserInput() {
     double value;
-    scanf("%lf", &value);
+    scanf("%1f", &value);
     return value;
 }
