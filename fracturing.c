@@ -46,3 +46,17 @@ double calculateDistance() {
     printf("The distance between the two points is %.2f\n", distance);
     return distance;
 }
+
+// Calculate Perimeter using the distance function
+double calculatePerimeter() {
+    double distance = calculateDistance();
+    double perimeter = 2 * PI * distance; 
+
+    //Output the perimeter
+    printf("The perimeter of the city encompassed by your request %.2f\n", perimeter);
+
+    //Difficulty Level
+    return 1.5;
+}
+
+
