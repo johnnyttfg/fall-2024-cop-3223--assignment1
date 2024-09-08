@@ -59,4 +59,47 @@ double calculatePerimeter() {
     return 1.5;
 }
 
+// Calculate the area using distance function
+double calculateArea() {
+    double distance = calculateDistance();
+    double area = PI * pow(distance, 2);
 
+    //Output the area
+    printf("The area of the city encompassed by your request is %.2f\n", area);
+
+    //difficulty level
+    return 2.0;
+
+}
+
+//Calculate width using the distance function
+double calculateWidth() {
+    double distance = calculateDistance();
+    double width = distance;
+
+    //Output the width
+    printf("The width of the city encompassed by your request is %.2f\n", width);
+
+    //difficulty level
+    return 2.0
+
+}
+
+//calculate height using the distance function
+double calculateHeight() {
+    double distance = calculateDistance();
+    double height = distance;
+
+    //Output the height
+    printf("The height of the city encompassed by your request is %.2f\n", height);
+
+    //difficulty level
+    return 2.0;
+}
+
+//Function to ask for user input
+double askForUserInput() {
+    double value;
+    scanf("%lf", &value);
+    return value;
+}
