@@ -4,14 +4,14 @@
 // Define PI
 #define PI 3.14159
 
-// Function Prototypes
+// Function 
 int main(int argc, char **argv);
 double calculateDistance();
 double calculatePerimeter();
 double calculateArea();
 double calculateWidth();
 double calculateHeight();
-double askForUserInput();
+double askForUserInput(const char *prompt);
 
 // Main function
 int main(int argc, char **argv) {
@@ -25,19 +25,17 @@ int main(int argc, char **argv) {
 
 // Function to calculate the distance between two points
 double calculateDistance() {
-    double x1, y1, x2, y2, distance;
+    double x1, x2, y1, y2, distance;
     
     // Prompt user to input coordinates
-    printf("Enter coordinates for Point #1 (x1 y1): ");
-    x1 = askForUserInput();
-    y1 = askForUserInput();
-    printf("Enter coordinates for Point #2 (x2 y2): ");
-    x2 = askForUserInput();
-    y2 = askForUserInput();
+    x1 = askForUserInput("Enter x-coordinate #1: ");
+    y1 = askForUserInput("Enter y-coordinate #1: ");
+    x2 = askForUserInput("Enter x-coordinate #2: ");
+    y2 = askForUserInput("Enter y-coordinate #2: ");
     
     // Output entered points
-    printf("Point #1 entered: x1 = %.2f; y1 = %.2f\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2f; y2 = %.2f\n", x2, y2);
+    printf("Point #1 entered: x1 = %.1f; y1 = %.1f\n", x1, y1);
+    printf("Point #2 entered: x2 = %.1f; y2 = %.1f\n", x2, y2);
     
     // Calculate the distance
     distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
@@ -50,54 +48,55 @@ double calculateDistance() {
 // Function to calculate the perimeter using the distance function
 double calculatePerimeter() {
     double distance = calculateDistance();
-    double perimeter = 2 * PI * distance; // Placeholder calculation (assuming circular shape)
+    double perimeter = 2 * PI * distance; 
 
     // Output the perimeter
-    printf("The perimeter of the city encompassed by your request is %.3f\n\n", perimeter);
+    printf("The perimeter of the city encompassed by your request is %.6f\n\n", perimeter);
 
-    // Return difficulty level (arbitrarily chosen, can be adjusted)
+    //  difficulty level
     return 2.0;
 }
 
 // Function to calculate the area using the distance function
 double calculateArea() {
     double distance = calculateDistance();
-    double area = PI * pow(distance, 2); // Placeholder calculation (assuming circular area)
+    double area = PI * pow(distance, 2); 
 
     // Output the area
-    printf("The area of the city encompassed by your request is %.3f\n\n", area);
+    printf("The area of the city encompassed by your request is %.6f\n\n", area);
 
-    // Return difficulty level (arbitrarily chosen, can be adjusted)
-    return 3.0;
+    //  difficulty level 
+    return 2.0;
 }
 
 // Function to calculate the width using the distance function
 double calculateWidth() {
     double distance = calculateDistance();
-    double width = distance; // Placeholder (actual width calculation would depend on object specifics)
+    double width = distance; 
 
     // Output the width
-    printf("The width of the city encompassed by your request is %.3f\n\n", width);
+    printf("The width of the city encompassed by your request is %.6f\n\n", width);
 
-    // Return difficulty level (arbitrarily chosen, can be adjusted)
-    return 1.5;
+    // difficulty
+    return 1.0;
 }
 
 // Function to calculate the height using the distance function
 double calculateHeight() {
     double distance = calculateDistance();
-    double height = distance; // Placeholder (actual height calculation would depend on object specifics)
+    double height = distance; 
 
     // Output the height
-    printf("The height of the city encompassed by your request is %.3f\n\n", height);
+    printf("The height of the city encompassed by your request is %.6f\n\n", height);
 
-    // Return difficulty level (arbitrarily chosen, can be adjusted)
-    return 2.5;
+    //  difficulty level 
+    return 2.0;
 }
 
-// Function to ask for user input
-double askForUserInput() {
+// Function to ask for user input 
+double askForUserInput(const char *prompt) {
     double value;
+    printf("%s", prompt);
     scanf("%lf", &value);
     return value;
 }
