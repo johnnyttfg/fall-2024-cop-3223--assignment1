@@ -1,4 +1,10 @@
-// Jonathan Thomas 5670488
+// Jonathan Thomas
+// UCFID 5670488
+//9/07/24
+//COP 3223 Parra
+//The purpose is write a program that houses many internal functions.
+//Input: Coordinates
+//Output: Measurments for circle
 
 
 #include <stdio.h>
